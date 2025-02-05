@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  .delay-700 {
+    animation-delay: 700ms;
+  }
+  .delay-1000 {
+    animation-delay: 1000ms;
+  }
+  
+  .mask-fade-out {
+    mask-image: linear-gradient(to right, black 0%, transparent 100%);
+  }
+  
+  .glass-effect {
+    @apply bg-background/80 backdrop-blur-md border border-border/50;
+  }
+  
+  .premium-shadow {
+    box-shadow: 
+      0 0 0 1px rgba(var(--foreground-rgb)/0.05),
+      0 1px 1px rgba(var(--foreground-rgb)/0.1),
+      0 2px 3px rgba(var(--foreground-rgb)/0.07),
+      0 4px 6px rgba(var(--foreground-rgb)/0.05),
+      0 8px 12px rgba(var(--foreground-rgb)/0.03);
+  }
+
+  .navbar-blur {
+    @apply backdrop-blur-[10px];
+  }
+
+  .navbar-glass {
+    @apply bg-white/80 dark:bg-black/80 border-gray-200 dark:border-gray-800;
+  }
+
+  .navbar-text {
+    @apply text-gray-900 dark:text-white;
+  }
+
+  .navbar-hover {
+    @apply hover:bg-gray-100 dark:hover:bg-gray-800;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    
+    --radius: 0.75rem;
+    
+    --brand: 0 91% 60%;
+    --brand-foreground: 0 74% 45%;
+    --brand-rgb: 239, 68, 68;
+    
+    --brand-purple: 265 89% 78%;
+    --brand-blue: 217 91% 60%;
+    --brand-cyan: 190 90% 50%;
+    
+    --gradient-start: 239 68 68;
+    --gradient-end: 220 38 38;
+    
+    --ai-gradient-1: 0 91% 60%;
+    --ai-gradient-2: 265 89% 78%;
+    --ai-gradient-3: 217 91% 60%;
+    --ai-gradient-4: 190 90% 50%;
+
+    --sky-400: #38bdf8;
+    --sky-500: #0ea5e9;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    
+    --brand: 0 91% 60%;
+    --brand-foreground: 0 74% 45%;
+    --brand-rgb: 239, 68, 68;
+    
+    --brand-purple: 265 89% 78%;
+    --brand-blue: 217 91% 60%;
+    --brand-cyan: 190 90% 50%;
+    
+    --gradient-start: 239 68 68;
+    --gradient-end: 220 38 38;
+    
+    --ai-gradient-1: 0 91% 60%;
+    --ai-gradient-2: 265 89% 78%;
+    --ai-gradient-3: 217 91% 60%;
+    --ai-gradient-4: 190 90% 50%;
+
+    --sky-400: #38bdf8;
+    --sky-500: #0ea5e9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+ 
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: url('/noise.png');
+    background-repeat: repeat;
+    background-size: 100px 100px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
