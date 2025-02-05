@@ -15,7 +15,22 @@ export const metadata: Metadata = {
   title: "MessageLM - AI Sales Enablement & Outreach Software",
   description: "MessageLM is an AI sales enablement and outreach software that helps businesses write high-quality, human-like messages using AI. Custom-built for your CRM to provide a sophisticated sales experience.",
   icons: {
-    icon: "/favicon.ico"
+    icon: [
+      {
+        url: "/favicon.ico",
+        sizes: "any"
+      },
+      {
+        url: "/icon.png",
+        type: "image/png",
+        sizes: "32x32"
+      }
+    ],
+    apple: {
+      url: "/apple-icon.png",
+      type: "image/png",
+      sizes: "180x180"
+    }
   }
 }
 
