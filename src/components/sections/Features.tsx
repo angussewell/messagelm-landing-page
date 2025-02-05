@@ -70,7 +70,7 @@ export function Features() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Built for teams who value meaningful connections over volume
+            Built for teams who value meaningful connections over volume.
           </motion.h2>
           <motion.p 
             className="text-base sm:text-lg text-muted-foreground"

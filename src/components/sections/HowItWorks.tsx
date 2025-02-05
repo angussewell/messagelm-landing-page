@@ -31,7 +31,7 @@ export function HowItWorks() {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4 sm:mb-6">
-                AI should enhance experiences, not just automate them
+                AI should enhance experiences, not just automate them.
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
                 When crafted with precision, AI becomes a tool for creating exceptional interactions. We focus on quality prompting to help you deliver experiences that leave lasting impressions.
@@ -61,7 +61,7 @@ export function HowItWorks() {
               <div className="absolute inset-0 bg-gradient-to-br from-brand/[0.02] via-brand-purple/[0.02] to-brand-blue/[0.02]" />
               <div className="relative max-w-2xl mx-auto text-center">
                 <h3 className="text-2xl sm:text-3xl font-semibold mb-3 sm:mb-4">
-                  Transform your CRM into something extraordinary
+                  Transform your CRM into something extraordinary.
                 </h3>
                 <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8">
                   We're building AI that amplifies human connection, not replaces it. Join us in crafting outreach that your prospects will actually want to receive.
