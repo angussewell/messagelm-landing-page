@@ -14,21 +14,21 @@ export function DashboardMockup({ className, ...props }: DashboardMockupProps) {
   return (
     <div className={cn("relative w-full", className)} {...props}>
       {/* Main Dashboard Section */}
-      <section className="py-12 sm:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="py-8 sm:py-12 md:py-24">
+        <div className="max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
           <div className="relative">
-            {/* Background Effects - Using neutral colors */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background rounded-2xl" />
+            {/* Background Effects */}
+            <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background rounded-xl sm:rounded-2xl" />
             
             {/* Main Container */}
             <motion.div 
-              className="relative bg-background/95 backdrop-blur-sm rounded-2xl border border-border/50 shadow-2xl overflow-hidden"
+              className="relative bg-background/95 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-border/50 shadow-2xl overflow-hidden"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               {/* App Layout */}
-              <div className="flex h-[400px] sm:h-[500px] md:h-[650px] overflow-hidden">
+              <div className="flex h-[350px] sm:h-[500px] md:h-[650px] overflow-hidden">
                 {/* Navigation Sidebar - Hidden on mobile */}
                 <div className="hidden sm:flex w-14 border-r border-border/50 flex-col items-center py-4 gap-4">
                   <div className="h-2 w-2 rounded-full bg-brand/20 mb-4" />
@@ -163,11 +163,11 @@ export function DashboardMockup({ className, ...props }: DashboardMockupProps) {
                 {/* Main Content */}
                 <div className="flex-1 flex flex-col">
                   {/* Header */}
-                  <div className="p-3 sm:p-4 border-b border-border/50">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0 mb-3">
+                  <div className="p-2.5 sm:p-4 border-b border-border/50">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-0 mb-2 sm:mb-3">
                       <div>
                         <h2 className="text-base sm:text-lg font-medium mb-1">Lead Engagement</h2>
-                        <div className="flex items-center gap-2 sm:gap-3 text-xs sm:text-sm text-foreground/40">
+                        <div className="flex items-center gap-1.5 sm:gap-3 text-xs sm:text-sm text-foreground/40">
                           <div className="flex items-center gap-1">
                             <Database className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
                             <span>v1.2.4</span>
@@ -191,10 +191,10 @@ export function DashboardMockup({ className, ...props }: DashboardMockupProps) {
                   </div>
 
                   {/* Flow Builder */}
-                  <div className="flex-1 p-3 sm:p-4">
-                    <div className="h-full flex flex-col gap-3 sm:gap-4">
+                  <div className="flex-1 p-2.5 sm:p-4">
+                    <div className="h-full flex flex-col gap-2.5 sm:gap-4">
                       {/* Configuration Panel */}
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3">
                         <motion.div
                           className="p-3 rounded-xl bg-background border border-border/50"
                           initial={{ y: 20, opacity: 0 }}
@@ -324,7 +324,7 @@ export function DashboardMockup({ className, ...props }: DashboardMockupProps) {
 
                       {/* Flow Canvas */}
                       <div className="flex-1 relative">
-                        <div className="absolute inset-0 bg-foreground/5 rounded-xl p-4">
+                        <div className="absolute inset-0 bg-foreground/5 rounded-lg sm:rounded-xl p-2.5 sm:p-4">
                           <div className="relative h-full">
                             {/* Flow Nodes */}
                             <div className="absolute inset-0 flex items-center justify-between px-4">
@@ -386,7 +386,7 @@ export function DashboardMockup({ className, ...props }: DashboardMockupProps) {
 
                       {/* Code Editor */}
                       <motion.div
-                        className="h-48 rounded-xl bg-background border border-border/50 overflow-hidden"
+                        className="h-36 sm:h-48 rounded-lg sm:rounded-xl bg-background border border-border/50 overflow-hidden"
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 1.3 }}
