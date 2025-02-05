@@ -2,28 +2,36 @@ import React from 'react'
 import { HeroSection } from "@/components/blocks/hero-section";
 import { Features } from '@/components/sections/Features'
 import { HowItWorks } from '@/components/sections/HowItWorks'
+import { ArrowRight } from 'lucide-react'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <>
       <HeroSection
+        badge={{
+          text: "Now accepting new clients",
+          action: {
+            text: "Book a demo",
+            href: "/demo"
+          }
+        }}
         title="AI outreach that feels unmistakably human"
-        description="We build custom AI models that give sales based organizations an unfair advantage"
+        description="We craft bespoke AI models that give sales organizations an unfair advantage through high-touch, personalized outreach at scale."
         actions={[
           {
-            text: "Get Started",
+            text: "Get started",
             href: "/get-started",
-            variant: "default",
+            icon: <ArrowRight className="w-4 h-4" />,
+            variant: "glow"
           },
           {
-            text: "View Examples",
-            href: "/demo",
-            variant: "glow",
-          },
+            text: "Book a demo",
+            href: "/demo"
+          }
         ]}
       />
       <Features />
       <HowItWorks />
-    </main>
+    </>
   )
 } 

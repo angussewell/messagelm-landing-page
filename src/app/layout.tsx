@@ -12,8 +12,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "MessageLM - AI Sales Enablement & Outreach Software",
-  description: "MessageLM is an AI sales enablement and outreach software that helps businesses write high-quality, human-like messages using AI. Custom-built for your CRM to provide a sophisticated sales experience.",
+  title: "MessageLM - Custom AI Sales Intelligence Platform",
+  description: "We craft bespoke AI models that give sales organizations an unfair advantage. Our platform combines expert prompt engineering with custom-built AI to create outreach that feels unmistakably human.",
   icons: {
     icon: [
       {
