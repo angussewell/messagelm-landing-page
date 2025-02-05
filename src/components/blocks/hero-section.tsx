@@ -39,7 +39,7 @@ export function HeroSection({
     <section
       className={cn(
         "bg-background text-foreground relative",
-        "pt-20 pb-6 sm:pt-32 md:pt-40 lg:pt-48 sm:pb-12 md:pb-16 px-3 sm:px-6",
+        "pt-16 pb-6 sm:pt-32 md:pt-40 lg:pt-48 sm:pb-12 md:pb-16 px-3 sm:px-6",
         "overflow-hidden"
       )}
     >
@@ -55,8 +55,8 @@ export function HeroSection({
         </div>
       </div>
       
-      <div className="mx-auto flex max-w-container flex-col gap-4 sm:gap-8 md:gap-10">
-        <div className="flex flex-col items-center gap-3 sm:gap-6 text-center px-1 sm:px-0">
+      <div className="mx-auto flex max-w-container flex-col gap-6 sm:gap-8 md:gap-10">
+        <div className="flex flex-col items-center gap-4 sm:gap-6 text-center px-2 sm:px-0">
           {/* Badge */}
           {badge && (
             <Badge variant="outline" className="animate-appear gap-1.5 sm:gap-2 text-xs sm:text-sm">
@@ -70,7 +70,7 @@ export function HeroSection({
 
           {/* Title */}
           <motion.h1 
-            className="relative z-10 inline-block animate-appear bg-gradient-to-br from-brand via-brand-purple to-brand-blue bg-clip-text text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight text-transparent drop-shadow-sm sm:leading-tight md:leading-tight px-2"
+            className="relative z-10 inline-block animate-appear bg-gradient-to-br from-brand via-brand-purple to-brand-blue bg-clip-text text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.15] sm:leading-tight md:leading-tight px-1 sm:px-0 max-w-[15ch] mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -90,7 +90,7 @@ export function HeroSection({
 
           {/* Actions */}
           <motion.div 
-            className="relative z-10 flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 w-full sm:w-auto px-4 sm:px-0"
+            className="relative z-10 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full sm:w-auto px-6 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -99,7 +99,7 @@ export function HeroSection({
               <Button
                 key={action.text}
                 variant={action.variant === "glow" ? "glow" : "default"}
-                className="w-full sm:w-auto text-sm sm:text-base py-2 sm:py-2.5"
+                className="w-full sm:w-auto text-sm sm:text-base py-2.5 sm:py-2.5"
                 asChild
               >
                 <a href={action.href} className="flex items-center justify-center gap-2">
@@ -113,7 +113,7 @@ export function HeroSection({
 
         {/* Dashboard Mockup */}
         <motion.div
-          className="relative z-10 w-full -mx-2 sm:mx-0 px-0.5 sm:px-0"
+          className="relative z-10 w-full mx-auto px-2 sm:px-0 max-w-[100vw] overflow-hidden"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1 }}
@@ -124,7 +124,7 @@ export function HeroSection({
 
         {/* Marquee Demo */}
         <motion.div
-          className="relative z-10 w-full mt-4 sm:mt-8"
+          className="relative z-10 w-full mt-6 sm:mt-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
