@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "MessageLM - Custom AI Sales Intelligence Platform",
-  description: "We craft bespoke AI models that give sales organizations an unfair advantage. Our platform combines expert prompt engineering with custom-built AI to create outreach that feels unmistakably human.",
+  description: "AI outreach that feels unmistakably human. We craft bespoke AI models that give sales organizations an unfair advantage.",
   icons: {
     icon: [
       {

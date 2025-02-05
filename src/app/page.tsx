@@ -16,7 +16,7 @@ export default function Home() {
           }
         }}
         title="AI outreach that feels unmistakably human"
-        description="We craft bespoke AI models that give sales organizations an unfair advantage through high-touch, personalized outreach at scale."
+        description="We craft bespoke AI models that give sales organizations an unfair advantage"
         actions={[
           {
             text: "Get started",
