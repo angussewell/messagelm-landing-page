@@ -36,28 +36,28 @@ const team: TeamMember[] = [
     name: 'Eric Stopper',
     role: 'Advisor',
     type: 'advisor',
-    bio: 'Strategic guidance in sales and market expansion',
+    bio: 'Host of PulseOX podcast & Co-founder of Profitibull. Shaping our sales language to create genuine connections',
     image: '/team/Eric%20Stopper%20Headshot.jpg'
   },
   {
     name: 'Owen Foster',
     role: 'Advisor',
     type: 'advisor',
-    bio: 'Expert in AI and machine learning applications',
+    bio: 'Principal at Foster Hospitality Companies. Bringing hospitality-driven approach to customer touchpoints',
     image: '/team/Owen%20Foster%20Headshot.jpeg'
   },
   {
     name: 'Duffy Young',
     role: 'Advisor',
     type: 'advisor',
-    bio: 'Expert in marketing strategy and leadership development',
+    bio: 'Founder & CEO of Profitable Automation. Building scalable systems for authentic engagement',
     image: '/team/Duffy%20Young%20Headshot.jpg'
   },
   {
     name: 'Phil Murphy',
     role: 'Advisor',
     type: 'advisor',
-    bio: 'Specialist in AI automation and process optimization',
+    bio: 'Co-founder of Profitable. Crafting human-centered AI automation for meaningful interactions',
     image: '/team/Phil%20Murphy%20Headshot.jpeg'
   }
 ]
@@ -135,10 +135,10 @@ export function TeamSection() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3 sm:mb-4 bg-gradient-to-br from-brand via-brand-purple to-brand-blue bg-clip-text text-transparent">
-              Meet Our Team
+              Where human creativity meets AI precision.
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground">
-              We're a dedicated team of professionals committed to revolutionizing sales communication through AI.
+              We craft the creative strategies that guide our AI, because true innovation starts with human insight.
             </p>
           </motion.div>
         </div>

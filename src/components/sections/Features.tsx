@@ -6,18 +6,18 @@ import { Target, MessageCircle, Sparkles } from 'lucide-react'
 
 const features = [
   {
-    title: 'Market-Aware AI',
-    description: 'AI models that understand your industry context and adapt to your unique communication patterns',
+    title: 'Start With Excellence',
+    description: 'We craft unique, personalized touchpoints first, then train AI to deliver that experience at scale',
     icon: Target,
   },
   {
-    title: 'Authentic Engagement',
-    description: 'Create conversations that feel personal and genuine, moving beyond standard AI-generated messages',
+    title: 'Custom-Crafted Models',
+    description: 'Every distinct interaction gets its own specialized AI, built on meticulously crafted examples',
     icon: MessageCircle,
   },
   {
-    title: 'Continuous Evolution',
-    description: 'Your platform learns and improves through expert guidance, ensuring consistently impactful communication',
+    title: 'Continuous Guidance',
+    description: 'Our team ensures every message maintains the high standards we set through creative expertise',
     icon: Sparkles,
   },
 ]
@@ -70,7 +70,7 @@ export function Features() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Built for teams who value meaningful connections over volume.
+            Human creativity first, AI precision second
           </motion.h2>
           <motion.p 
             className="text-base sm:text-lg text-muted-foreground"
@@ -79,7 +79,7 @@ export function Features() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Our platform combines advanced AI with expert guidance to create outreach that resonates.
+            We design exceptional experiences, then train AI to deliver them consistently
           </motion.p>
         </div>
 
