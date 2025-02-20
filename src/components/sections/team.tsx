@@ -33,6 +33,13 @@ const team: TeamMember[] = [
     image: '/team/Ini%20Daniel%20Headshot.jpg'
   },
   {
+    name: 'Cindy Bermoy',
+    role: 'Onboarding Manager',
+    type: 'operations',
+    bio: 'Ensuring smooth client transitions and implementation success',
+    image: '/team/Cindy%20Headshot.jpg'
+  },
+  {
     name: 'Eric Stopper',
     role: 'Advisor',
     type: 'advisor',
@@ -144,7 +151,7 @@ export function TeamSection() {
         </div>
 
         {/* Core Team */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto mb-8 sm:mb-12">
           {team
             .filter(member => member.type !== 'advisor')
             .map((member, index) => (
